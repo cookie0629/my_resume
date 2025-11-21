@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>赵松涛网页简历</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo" data-i18n="brand.name">Zhao Songtao</div>
+      <nav class="nav-links">
+        <a href="#hero" data-i18n="nav.home">首页</a>
+        <a href="#about" data-i18n="nav.about">关于我</a>
+        <a href="#bio" data-i18n="nav.bio">个人介绍</a>
+        <a href="#skills" data-i18n="nav.skills">技能</a>
+        <a href="#projects" data-i18n="nav.projects">项目</a>
+        <a href="#contact" data-i18n="nav.contact">联系方式</a>
+      </nav>
+      <select
+        id="language-select"
+        class="lang-select"
+        aria-label="选择语言"
+      >
+        <option value="zh" data-i18n="lang.zh">中文</option>
+        <option value="en" data-i18n="lang.en">English</option>
+        <option value="ru" data-i18n="lang.ru">Русский</option>
+      </select>
+      <button class="theme-toggle" aria-label="切换主题">
+        <i class="bx bx-sun"></i>
+      </button>
+      <button class="menu-toggle" aria-label="展开菜单">
+        <i class="bx bx-menu"></i>
+      </button>
+    </header>
+
+    <main>
+      <section id="hero" class="hero section fade-in">
+        <div class="hero-text">
+          <p class="eyebrow" data-i18n="hero.eyebrow">技术无边 · 法律有界</p>
+          <h1 data-i18n="hero.title">
+            你好，我是赵松涛，一位后端开发者。
+          </h1>
+          <p data-i18n="hero.description">
+            正在通过课程实验与自学打磨编程基础，希望在实习中把扎实的工程习惯与敏捷学习能力落地，协助团队完成真实项目。
+          </p>
+          <div class="hero-cta">
+            <a class="btn primary" href="#projects" data-i18n="hero.primaryBtn"
+              >查看我的项目</a
+            >
+            <a class="btn ghost" href="#contact" data-i18n="hero.secondaryBtn"
+              >联系我</a
+            >
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="avatar">
+            <img
+              src="./图片/头像2.jpg"
+              alt="职业头像"
+              loading="lazy"
+            />
+          </div>
+          <div class="badge">
+            <i class="bx bx-bolt-circle"></i>
+            <span data-i18n="hero.badge">NSU · 大三</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about section fade-in">
+        <div class="section-title">
+          <h2 data-i18n="about.title">关于我</h2>
+          <p data-i18n="about.subtitle">专注打造优雅的代码编写</p>
+        </div>
+        <div class="about-content">
+          <p data-i18n="about.paragraph">
+            我目前在新西伯利亚国立大学主修计算机科学与系统工程，聚焦全栈基础。虽然缺少正式项目经验，但我通过课程作业、实验室任务与自学练习建立了良好的工程规范，期望在实习中向经验丰富的工程师学习，快速上手业务并交付高质量代码。
+          </p>
+          <ul class="traits">
+            <li>
+              <i class="bx bx-check"></i>
+              <span data-i18n="about.trait1">注重细节</span>
+            </li>
+            <li>
+              <i class="bx bx-check"></i>
+              <span data-i18n="about.trait2">热爱学习</span>
+            </li>
+            <li>
+              <i class="bx bx-check"></i>
+              <span data-i18n="about.trait3">强协作力</span>
+            </li>
+            <li>
+              <i class="bx bx-check"></i>
+              <span data-i18n="about.trait4">结果导向</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 个人介绍板块：位于关于我与技能之间 -->
+      <section id="bio" class="bio section fade-in">
+        <div class="section-title">
+          <h2 data-i18n="bio.title">个人介绍<span> · About Me</span></h2>
+          <p data-i18n="bio.subtitle">更全面的背景介绍，让你快速了解我</p>
+        </div>
+        <!-- 双列布局容器 -->
+        <div class="bio-grid">
+          <article class="bio-card">
+            <h3>
+              <i class="bx bxs-graduation"></i>
+              <span data-i18n="bio.education.title">教育背景</span>
+            </h3>
+            <ul class="bio-list">
+              <li>
+                <i class="bx bxs-book"></i>
+                <div>
+                  <p class="title" data-i18n="bio.education.item1.title">
+                    新西伯利亚国立大学 · 计算机科学与系统工程
+                  </p>
+                  <p class="meta" data-i18n="bio.education.item1.meta">
+                    学士（大三）· 2023 - 2027
+                  </p>
+                </div>
+              </li>
+              <li>
+                <i class="bx bxs-book"></i>
+                <div>
+                  <p class="title" data-i18n="bio.education.item2.title">
+                    暂无
+                  </p>
+                  <p class="meta" data-i18n="bio.education.item2.meta">
+                    暂无
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </article>
+
+          <article class="bio-card">
+            <h3>
+              <i class="bx bxs-briefcase"></i>
+              <span data-i18n="bio.experience.title">工作经历</span>
+            </h3>
+            <ul class="bio-list">
+              <li>
+                <i class="bx bx-building"></i>
+                <div>
+                  <p class="title" data-i18n="bio.experience.item1.title">
+                    NSU附属中学讲师
+                  </p>
+                  <p class="meta" data-i18n="bio.experience.item1.meta">
+                    被校长聘请过去讲编程与数理逻辑
+                  </p>
+                </div>
+              </li>
+              <li>
+                <i class="bx bx-building"></i>
+                <div>
+                  <p class="title" data-i18n="bio.experience.item2.title">
+                    c语言老师
+                  </p>
+                  <p class="meta" data-i18n="bio.experience.item2.meta">
+                    远程教学C语言
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </article>
+
+          <article class="bio-card">
+            <h3>
+              <i class="bx bxs-award"></i>
+              <span data-i18n="bio.languages.title">外语水平</span>
+            </h3>
+            <ul class="bio-list">
+              <li>
+                <i class="bx bx-medal"></i>
+                <div>
+                  <p class="title" data-i18n="bio.languages.item1.title">
+                    中文 · 母语
+                  </p>
+                  <p class="meta" data-i18n="bio.languages.item1.meta">
+                    擅长技术写作与演示
+                  </p>
+                </div>
+              </li>
+              <li>
+                <i class="bx bx-medal"></i>
+                <div>
+                  <p class="title" data-i18n="bio.languages.item2.title">
+                    俄语 · 校园 / 生活流利
+                  </p>
+                  <p class="meta" data-i18n="bio.languages.item2.meta">
+                    ТРКИ-2 · 可以自由表达自己的言论
+                  </p>
+                </div>
+              </li>
+              <li>
+                <i class="bx bx-medal"></i>
+                <div>
+                  <p class="title" data-i18n="bio.languages.item3.title">
+                    英语 · 学术交流
+                  </p>
+                  <p class="meta" data-i18n="bio.languages.item3.meta">
+                    能阅读技术文献
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </article>
+
+          <article class="bio-card">
+            <h3>
+              <i class="bx bxs-heart"></i>
+              <span data-i18n="bio.hobbies.title">兴趣爱好</span>
+            </h3>
+            <ul class="bio-list">
+              <li>
+                <i class="bx bx-run"></i>
+                <div>
+                  <p class="title" data-i18n="bio.hobbies.item1.title">
+                    篮球与自由锻炼
+                  </p>
+                  <p class="meta" data-i18n="bio.hobbies.item1.meta">
+                    保持专注与韧性
+                  </p>
+                </div>
+              </li>
+              <li>
+                <i class="bx bx-music"></i>
+                <div>
+                  <p class="title" data-i18n="bio.hobbies.item2.title">
+                    合成器音乐创作
+                  </p>
+                  <p class="meta" data-i18n="bio.hobbies.item2.meta">
+                    热衷声音与节奏设计
+                  </p>
+                </div>
+              </li>
+              <li>
+                <i class="bx bx-camera"></i>
+                <div>
+                  <p class="title" data-i18n="bio.hobbies.item3.title">
+                    街头摄影
+                  </p>
+                  <p class="meta" data-i18n="bio.hobbies.item3.meta">
+                    洞察人文与光影故事
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="skills section fade-in">
+        <div class="section-title">
+          <h2 data-i18n="skills.title">技能图谱</h2>
+          <p data-i18n="skills.subtitle">掌握的编程语言</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>
+              <i class="bx bx-code-curly"></i>
+              <span data-i18n="skills.frontend.title">编程技能</span>
+            </h3>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name" data-i18n="skills.frontend.html">C语言</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name" data-i18n="skills.frontend.css">Java</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name" data-i18n="skills.frontend.js">JavaScript</span>
+                <span class="skill-percent">75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name" data-i18n="skills.frontend.react">c++</span>
+                <span class="skill-percent">76%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name" data-i18n="skills.frontend.vue">数据库</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>
+              <i class="bx bx-cog"></i>
+              <span data-i18n="skills.tools.title">工具 & 其他</span>
+            </h3>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name" data-i18n="skills.tools.git">Git / GitHub</span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name" data-i18n="skills.tools.webpack">项目配置</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name" data-i18n="skills.tools.node">Node.js</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name" data-i18n="skills.tools.python">Python</span>
+                <span class="skill-percent">75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name" data-i18n="skills.tools.design">Design Systems</span>
+                <span class="skill-percent">70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects section fade-in">
+        <div class="section-title">
+          <h2 data-i18n="projects.title">精选项目</h2>
+          <p data-i18n="projects.subtitle">自己从0到100做的项目</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <img
+              src="https://via.placeholder.com/600x400"
+              alt="项目一截图"
+              loading="lazy"
+            />
+            <div class="project-body">
+              <h3 data-i18n="projects.card1.title">待更新</h3>
+              <p data-i18n="projects.card1.desc">
+                在 UI 工程课程中完成的团队作业，我负责用 React + TypeScript 搭建基础组件、主题切换与 Storybook 文档，学习到组件抽象与可访问性。
+              </p>
+              <div class="tags">
+                <span data-i18n="projects.card1.tag1">React</span>
+                <span data-i18n="projects.card1.tag2">TypeScript</span>
+                <span data-i18n="projects.card1.tag3">D3.js</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a
+                href="#"
+                aria-label="GitHub"
+                data-i18n-aria-label="projects.card1.github"
+              >
+                <i class="bx bxl-github"></i>
+              </a>
+              <a
+                href="#"
+                aria-label="在线演示"
+                data-i18n-aria-label="projects.card1.demo"
+              >
+                <i class="bx bx-link-external"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img
+              src="https://via.placeholder.com/600x400"
+              alt="项目二截图"
+              loading="lazy"
+            />
+            <div class="project-body">
+              <h3 data-i18n="projects.card2.title">待更新</h3>
+              <p data-i18n="projects.card2.desc">
+                为数据结构课程制作的 Web 可视化工具，支持拖拽调整数据并以动画展示排序、图遍历等过程，用于课堂演示和自测。
+              </p>
+              <div class="tags">
+                <span data-i18n="projects.card2.tag1">Vue</span>
+                <span data-i18n="projects.card2.tag2">Pinia</span>
+                <span data-i18n="projects.card2.tag3">PWA</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a
+                href="#"
+                aria-label="GitHub"
+                data-i18n-aria-label="projects.card2.github"
+              >
+                <i class="bx bxl-github"></i>
+              </a>
+              <a
+                href="#"
+                aria-label="在线演示"
+                data-i18n-aria-label="projects.card2.demo"
+              >
+                <i class="bx bx-link-external"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img
+              src="https://via.placeholder.com/600x400"
+              alt="项目三截图"
+              loading="lazy"
+            />
+            <div class="project-body">
+              <h3 data-i18n="projects.card3.title">待更新</h3>
+              <p data-i18n="projects.card3.desc">
+                在校园社团中自发尝试的移动端页面，整合排练/会议时间与通知，主要练习响应式布局、表单与本地存储，尚未正式上线。
+              </p>
+              <div class="tags">
+                <span data-i18n="projects.card3.tag1">Next.js</span>
+                <span data-i18n="projects.card3.tag2">Tailwind</span>
+                <span data-i18n="projects.card3.tag3">Node.js</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a
+                href="#"
+                aria-label="GitHub"
+                data-i18n-aria-label="projects.card3.github"
+              >
+                <i class="bx bxl-github"></i>
+              </a>
+              <a
+                href="#"
+                aria-label="在线演示"
+                data-i18n-aria-label="projects.card3.demo"
+              >
+                <i class="bx bx-link-external"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section fade-in">
+        <div class="section-title">
+          <h2 data-i18n="contact.title">保持联系</h2>
+          <p data-i18n="contact.subtitle">欢迎合作或交流更多想法</p>
+        </div>
+        <div class="contact-grid">
+
+          <div class="contact-info">
+            <p data-i18n="contact.info.text">
+              正在积极寻求 2026 年的全栈实习机会，期待加入注重代码质量与指导的团队
+            </p>
+            <ul>
+              <li>
+                <i class="bx bx-envelope"></i>
+                <span data-i18n="contact.info.email">zhaosongtao645@gmail.com</span>
+              </li>
+              <li>
+                <i class="bx bx-map"></i>
+                <span data-i18n="contact.info.location">Novosibirsk · Remote Friendly</span>
+              </li>
+            </ul>
+            <div class="socials">
+              <a
+                href="#"
+                aria-label="GitHub"
+                data-i18n-aria-label="social.github"
+              >
+                <i class="bx bxl-github"></i>
+              </a>
+              <a
+                href="#"
+                aria-label="LinkedIn"
+                data-i18n-aria-label="social.linkedin"
+              >
+                <i class="bx bxl-linkedin-square"></i>
+              </a>
+              <a
+                href="#"
+                aria-label="Dribbble"
+                data-i18n-aria-label="social.dribbble"
+              >
+                <i class="bx bxl-dribbble"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p data-i18n="footer.copy">© 2026 赵松涛. 保留所有权利.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
+
