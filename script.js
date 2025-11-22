@@ -2,9 +2,9 @@
 const translations = {
   zh: {
     'brand.name': '赵松涛',
-    'lang.zh': '中文',
-    'lang.en': 'English',
-    'lang.ru': 'Русский',
+    'lang.zh': '🇨🇳 中文',
+    'lang.en': '🇺🇸 English',
+    'lang.ru': '🇷🇺 Русский',
     'nav.home': '首页',
     'nav.about': '关于我',
     'nav.bio': '个人介绍',
@@ -114,9 +114,9 @@ const translations = {
   },
   en: {
     'brand.name': 'Zhao Songtao',
-    'lang.zh': '中文',
-    'lang.en': 'English',
-    'lang.ru': 'Русский',
+    'lang.zh': '🇨🇳 中文',
+    'lang.en': '🇺🇸 English',
+    'lang.ru': '🇷🇺 Русский',
     'nav.home': 'Home',
     'nav.about': 'About',
     'nav.bio': 'Profile',
@@ -228,9 +228,9 @@ const translations = {
   },
   ru: {
     'brand.name': 'Чжао Сунтао',
-    'lang.zh': '中文',
-    'lang.en': 'English',
-    'lang.ru': 'Русский',
+    'lang.zh': '🇨🇳 中文',
+    'lang.en': '🇺🇸 English',
+    'lang.ru': '🇷🇺 Русский',
     'nav.home': 'Главная',
     'nav.about': 'Кратко',
     'nav.bio': 'Профиль',
