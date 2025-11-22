@@ -68,9 +68,9 @@ const translations = {
     'skills.tools.design': 'Design Systems',
     'projects.title': '精选项目',
     'projects.subtitle': '自己从0到100做的项目',
-    'projects.card1.title': '待更新',
+    'projects.card1.title': '一款自托管的音乐流媒体软件',
     'projects.card1.desc':
-      'UI 工程课程中的团队作业，负责 React + TypeScript 组件、主题切换与 Storybook 文档，实践组件抽象与可访问性。',
+      'https://github.com/cookie0629/LMS',
     'projects.card1.tag1': 'React',
     'projects.card1.tag2': 'TypeScript',
     'projects.card1.tag3': 'D3.js',
