@@ -98,8 +98,8 @@ const translations = {
     'contact.info.email': 'zhaosongtao645@gmail.com',
     'contact.info.location': 'Novosibirsk',
     'social.github': 'GitHub',
-    // 'social.linkedin': 'LinkedIn',
-    // 'social.dribbble': 'Dribbble',
+    'social.linkedin': 'LinkedIn',
+    'social.dribbble': 'Dribbble',
     'footer.copy': '© 2026 赵松涛. 保留所有权利.',
   },
   en: {
